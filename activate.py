@@ -54,14 +54,14 @@ def release_key(hex_key_code):
     SendInput(1, ctypes.pointer(x), ctypes.sizeof(x))
 
 # Scroll Lock key code
-SCROLL_LOCK = 0x91
+CAPS_LOCK = 0x14
 
 # Main loop
 while True:
-    press_key(SCROLL_LOCK)
-    release_key(SCROLL_LOCK)
+    press_key(CAPS_LOCK)
+    release_key(CAPS_LOCK)
     time.sleep(0.1)
-    press_key(SCROLL_LOCK)
-    release_key(SCROLL_LOCK)
+    press_key(CAPS_LOCK)
+    release_key(CAPS_LOCK)
     time.sleep(1)
 
